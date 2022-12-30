@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Sharepoint Video Speed",
+  "description": "It's for when you're too lazy to watch the whole video on Sharepoint. You 2x it.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {
+    "16": "images/image-16.png",
+    "32": "images/image-32.png",
+    "48": "images/image-48.png",
+    "128": "images/image-128.png"
+  },
+  "web_accessible_resources": [{
+    "matches": ["<all_urls>"],
+    "resources": ["images/speed.png"]
+  }],
+  "content_scripts": [
+    {
+      "js": ["scripts/jquery-3.1.0.js", "scripts/content.js"],
+      "css": ["style.css"],
+      "matches": [
+        "https://*.sharepoint.com/*"
+      ]
+    }
+  ]
+}
