@@ -9,3 +9,8 @@ Chrome extension for having the option to change the playback speed on Sharepoin
 | |  |
 | ----------- | ----------- |
 | ![alt text](images/showcase-icon.png) | ![alt text](images/showcase-options.png) |
+
+## Issues
+#### If the playback icon doensn't show up for some reason
+1. Reload the page. If issue persists:
+2. Paste this code into the console: ```$('video').playbackRate = 2```
